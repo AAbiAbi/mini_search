@@ -1,0 +1,8 @@
+/.venv/
+index.db
+Input_Filings/
+.DS_Store
+__pycache__/
+*.pyc
+env/
+venv/
