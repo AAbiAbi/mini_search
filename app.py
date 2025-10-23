@@ -10,7 +10,7 @@ def home():
     q = request.args.get("q")
     res = []
     if q: res = search_db(q)
-    return render_template("index.html", query=q, results=res)
+    return render_template("index.html", query=q, results=res, ai_mode=False)
 
 @app.route("/click/<int:doc_id>")
 def click(doc_id):
@@ -27,7 +27,7 @@ def ai_search():
     q = request.args.get("q")
     res = []
     if q: res = agentic_search(q)
-    return render_template("index.html", query=q, results=res)
+    return render_template("index.html", query=q, results=res, ai_mode=True)
 
 if __name__ == "__main__":
     app.run(debug=True)

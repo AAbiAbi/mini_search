@@ -135,3 +135,33 @@ The backend will:
 - Perform searches for each
 
 - Merge, rank, and return 1–3 high-confidence results
+
+
+## Tech Stack
+
+Component	Library
+Backend	Flask
+Database	SQLite
+OCR	pdfplumber, pytesseract
+AI Agent	Google Gemini (google-generativeai)
+Frontend	HTML + CSS
+
+## Design Decisions
+
+Indexing: Raw text extracted and stored in SQLite for simplicity.
+
+Ranking: Weighted sum of keyword frequency + click popularity.
+
+Agentic Search: Gemini used as “power user” that issues multiple keyword queries.
+
+Fallback: If Gemini unavailable, falls back to local synonym expansion.
+
+## Future Improvements
+
+Add semantic ranking via embeddings (e.g., Gemini Embeddings or OpenAI Embeddings)
+
+Add PDF viewer preview in results
+
+Add background indexing and progress bar
+
+Improve agent query reasoning chain
