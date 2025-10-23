@@ -7,7 +7,7 @@ A lightweight search engine built from scratch — featuring
 - agentic search powered by Google Gemini (no vector embeddings).
 
 # 🚀 Demo Preview
-[▶️ Watch Demo on GitHub](https://github.com/AAbiAbi/mini_search/blob/main/demo.mp4)
+[▶️ Watch Demo on GitHub](https://github.com/AAbiAbi/mini_search/releases/tag/demo)
 
 
 ## Features
