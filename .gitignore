@@ -10,3 +10,4 @@ venv331/
 .venv331/
 .venv/
 index.db_journal
+.env/
