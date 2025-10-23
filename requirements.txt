@@ -1,0 +1,28 @@
+# --- Core backend ---
+Flask==3.0.3
+itsdangerous==2.2.0
+Werkzeug==3.0.3
+Jinja2==3.1.4
+
+# --- OCR & Document Parsing ---
+pdfplumber==0.11.0
+pytesseract==0.3.13
+Pillow==10.4.0
+
+# --- Database & Utilities ---
+sqlite-utils==3.36
+tqdm==4.66.5
+
+# --- Google Gemini (LLM API) ---
+google-generativeai==0.8.5
+protobuf==5.28.2
+google-api-core>=2.19.0
+google-auth>=2.33.0
+typing-extensions>=4.12.2
+
+# --- Optional: image/PDF manipulation ---
+PyPDF2==3.0.1
+
+# --- Development & Debugging ---
+requests==2.32.3
+python-dotenv==1.0.1

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mini Search Engine</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h2>🔍 Mini Search Engine</h2>
+    <form id="searchForm" method="get">
+        <input type="text" id="queryInput" name="q" value="{{query or ''}}" placeholder="Enter your query...">
+        <button type="submit" formaction="/">Normal Search</button>
+        <button type="submit" formaction="/ai_search">🤖 AI Search</button>
+    </form>
+
+    {% if results %}
+        <h3>{{ '🤖 AI Search Results:' if ai_mode else 'Normal Search Results:' }}</h3>
+        <p><b>Found {{results|length}} results：</b></p>
+        {% for s,id,path,snippet,clicks in results %}
+        <div class="result">
+            <a href="/click/{{id}}" target="_blank">{{path}}</a><br>
+            <div class="snippet">{{snippet | safe}}...</div>
+            <small>click points：{{clicks}}</small>
+        </div>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,19 @@
+body { font-family: Arial; max-width: 800px; margin: auto; padding: 2em; }
+input { width: 70%; padding: 0.5em; }
+button { padding: 0.5em 1em; }
+.result { margin: 1em 0; }
+.snippet { color: #333; }
+small { color: #777; }
+mark { background-color: yellow; color: black; font-weight: bold; }
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  input { width: 100%; }
+}
+
+body.normal-mode {
+      background-color: #f9f9f9; /* 普通搜索：浅灰 */
+    }
+    body.ai-mode {
+      background-color: #e8f5ff; /* AI 搜索：浅蓝 */
+    }
