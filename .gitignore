@@ -6,8 +6,10 @@ __pycache__/
 *.pyc
 env/
 venv/
+venv
 venv331/
 .venv331/
+.venv331
 .venv/
 index.db_journal
 .env/
